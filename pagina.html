@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <p id="nomeUsuario"></p>
+    <p id="hobby"></p>
+    <p id="rede"></p>
+    <p id="futebol"></p>
+
+    <script>
+        const nome = sessionStorage.getItem("nome");
+        document.getElementById("nomeUsuario").innerHTML = nome;
+        
+        const hobby = sessionStorage.getItem("hobby");
+        document.getElementById("hobby").innerHTML = hobby;
+        
+        const rede = sessionStorage.getItem("rede");
+        document.getElementById("rede").innerHTML = rede;
+        
+        const futebol = sessionStorage.getItem("futebol");
+        document.getElementById("futebol").innerHTML = futebol;
+
+
+      </script>
+    
+</body>
+</html>
